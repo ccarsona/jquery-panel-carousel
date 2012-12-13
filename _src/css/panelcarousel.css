@@ -1,0 +1,153 @@
+/* Panel Carousel */
+.panel-carousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.panel-carousel .panel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/* Indicators */
+.panel-carousel-indicators {
+	position: absolute;
+	bottom: 19px;
+	right: 60px;
+	z-index: 10;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.panel-carousel-indicator-item {
+	float: left;
+	display: block;
+	margin: 0px 3px;
+}
+
+.panel-carousel-indicator-item a {
+	float: left;
+	display: block;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	text-indent: -500px;
+	white-space: nowrap;
+	background: #005667;
+	border: 1px solid #002B34;
+	
+	-webkit-border-radius: 7px;
+	   -moz-border-radius: 7px;
+	    -ms-border-radius: 7px;
+	     -o-border-radius: 7px;
+	        border-radius: 7px;
+	
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 2px 1px rgba(255,255,255,1);
+	   -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 2px 1px rgba(255,255,255,1);
+	    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 2px 1px rgba(255,255,255,1);
+	     -o-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 2px 1px rgba(255,255,255,1);
+	        box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 2px 1px rgba(255,255,255,1);
+}
+		
+.panel-carousel-indicator-item.active a {
+	background: #47AA42;
+	border-color: #30732D;
+}
+
+/* Controls */
+.panel-carousel-play-pause-toggle,
+.panel-carousel-previous-button,
+.panel-carousel-next-button {
+	display: block;
+	position: absolute;
+	z-index: 15;
+	width: 30px;
+	height: 30px;
+	background: url(/images/sprite.panel-carousel.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+
+/* Play/Pause Button */
+.panel-carousel-play-pause-toggle {
+	right: 20px;
+	bottom: 10px;
+	background-position: 0px 0px;
+}
+/* Play Button */
+.panel-carousel-play-pause-toggle:hover {
+	background-position: -30px 0px;
+}
+
+.panel-carousel-play-pause-toggle:active {
+	background-position: -60px 0px;
+}
+
+/* Pause Button */
+.panel-carousel-pause-btn {
+	background-position: 0px -30px;
+}
+
+.panel-carousel-pause-btn:hover {
+	background-position: -30px -30px;
+}
+
+.panel-carousel-pause-btn:active {
+	background-position: -60px -30px;
+}
+
+
+
+/* Next/Previous Button */
+.panel-carousel-previous-button,
+.panel-carousel-next-button {
+	top: 50%;
+	margin-top: -15px;
+	
+	-webkit-transition: opacity 0.5s;
+	   -moz-transition: opacity 0.5s;
+	    -ms-transition: opacity 0.5s;
+	     -o-transition: opacity 0.5s;
+	        transition: opacity 0.5s;
+	
+	opacity: 0.15;
+	
+}
+
+.panel-carousel:hover .panel-carousel-previous-button,
+.panel-carousel:hover .panel-carousel-next-button {
+	
+	opacity: 1;
+	
+}
+
+/* Previous Button */
+.panel-carousel-previous-button {
+	left: 20px;
+	background-position: 0px -90px;
+}
+
+.panel-carousel-previous-button:hover {
+	background-position: -30px -90px;
+}
+
+.panel-carousel-previous-button:active {
+	background-position: -60px -90px;
+}
+
+/* Next Button */
+.panel-carousel-next-button {
+	right: 20px;
+	background-position: 0px -60px;
+}
+
+.panel-carousel-next-button:hover {
+	background-position: -30px -60px;
+}
+
+.panel-carousel-next-button:active {
+	background-position: -60px -60px;
+}
